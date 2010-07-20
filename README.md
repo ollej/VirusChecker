@@ -50,3 +50,10 @@ ClamScan Plugin
 Runs the "clamscan" command line program from the ClamAV package to check the virus against the latest
 virus definition list.
 
+
+vcstest.php script
+The vcstest.php script is a simple script to test the VirusChecker class. It can also be used to
+check for viruses in specific files.
+
+Just run it from the command line and list all the files to check on the command line as arguments
+to the script.
