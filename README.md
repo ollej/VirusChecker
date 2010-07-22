@@ -11,6 +11,7 @@ Requirements
 ------------
  * PHP 5
  * ClamAV (to use the ClamScan plugin)
+ * Curl PHP extension (to use the VirusTotalHash plugin)
 
 Usage
 -----
@@ -40,7 +41,7 @@ the VCScanner directory which contains a class with the same name as the file, b
 contain a public method called "scan". This method will be called with the filename as the
 only parameter, and if the method returns 1, the file is considered to be a virus.
 
-    class VCScanner_ClamScan implements VCScanner
+    class VCScanner_PluginName implements VCScanner
     {
         public function scan($filename) {
             if (fileContainsVirus($filename)) {
